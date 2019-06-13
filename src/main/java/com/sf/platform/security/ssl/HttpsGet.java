@@ -9,8 +9,8 @@ public class HttpsGet {
 
     public static void main(String[] args) {
 
-//        String httpsUrl = "https://www.google.com";
-        String httpsUrl = "https://www.amazon.com";
+        String httpsUrl = "https://www.google.com";
+//        String httpsUrl = "https://www.amazon.com";
 
         try {
             URL url = new java.net.URL(httpsUrl);
