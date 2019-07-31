@@ -1,14 +1,14 @@
 package com.sf.platform.security.ssl;
 
-import java.nio.ByteBuffer;
-import java.util.concurrent.Executor;
-
 import javax.net.ssl.SSLEngine;
 import javax.net.ssl.SSLEngineResult;
 import javax.net.ssl.SSLEngineResult.HandshakeStatus;
 import javax.net.ssl.SSLException;
+import java.nio.ByteBuffer;
+import java.util.concurrent.Executor;
 
 public abstract class SSLProvider implements Runnable {
+
     final SSLEngine engine;
     final Executor ioWorker, taskWorkers;
     final ByteBuffer clientWrap, clientUnwrap;
